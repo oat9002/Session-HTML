@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Session</title>
+  <style>
+    span {
+      color: blue;
+    }
+  </style>
+</head>
+<body>
+  <!-- story -->
+  <!-- Head of story -->
+  <h1>Article about dog dog</h1><br/>
+  <h2>This is a dog</h2><br/>
+  <!-- Show image -->
+  <img src="images/pet.jpg"/>
+  <!-- Use paragraph -->
+  <p>His name is ....</p>
+  <!-- Use span with some css -->
+  He is very kind. He has never <span>bitten anyone</span>
+  <!-- Use div -->
+  <div>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rhoncus convallis est,
+    vitae ultricies arcu venenatis nec. Proin dui sapien, semper vulputate iaculis sit amet, egestas
+    sed neque. Ut porta lacus sit amet arcu varius egestas. Aenean auctor erat facilisis, hendrerit velit sagittis,
+    pretium mi. Aenean sagittis pretium metus at posuere. Nulla ut hendrerit diam. Maecenas efficitur ullamcorper felis,
+    sed bibendum tellus posuere sit amet. <a href="link.html">to next page</a>
+  </div>
+  <!-- Use Table -->
+  <table>
+    <!-- separate part by thead and tbody -->
+    <thead>
+      <!-- Use tr(row) and th(column header) -->
+      <tr>
+        <th>
+            Character
+        </th>
+        <th>
+            Eating
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <!-- Use td(head) -->
+        <td>
+          <!-- Use unordered list -->
+          <ul>
+            <li>4 legs</li>
+            <li>big nose</li>
+            <li>black eyes</li>
+          </ul>
+        </td>
+        <td>
+          <!-- Use ordered list -->
+          <ol>
+            <li>vegetable</li>
+            <li>meat</li>
+            <li>snack</li>
+          </ol>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- form  -->
+  <form action="http://oat.southeastasia.cloudapp.azure.com:5000" method="post" id='form'>
+    <!-- Use label -->
+    <label>How much do you love dog?</label><br/>
+    <!-- Use various input radio type -->
+    <input type="radio" name="dog" value="1">1</input>
+    <input type="radio" name="dog" value="2">2</input>
+    <input type="radio" name="dog" value="3">3</input>
+    <input type="radio" name="dog" value="4">4</input>
+    <input type="radio" name="dog" value="5">5</input><br/>
+    <label>What about cat?</label><br/>
+    <!-- Use select(drop down button) -->
+    <select name="cat">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+    </select><br/>
+    <label>Why do you love dog?</label><br/>
+    <!-- Use textarea -->
+    <textarea name="txt" placeholder="what ever!" form="form"></textarea><br/>
+    <label>Enter your name</label><br/>
+    <!-- Use input type text -->
+    <input type="text" name="name" placeholder="your name"/><br/>
+    <!-- Submit button -->
+    <input type="submit" name="submit"/>
+  </form>
+</body>
+</html>

@@ -1,0 +1,9 @@
+{
+    "type": "sftp",
+    "host": "oat.southeastasia.cloudapp.azure.com",
+    "username": "oat",
+    "password": "Mikuvocaloid01",
+    "port": 22,
+    "remotePath": "/home/oat/node/",
+    "uploadOnSave": true
+}
