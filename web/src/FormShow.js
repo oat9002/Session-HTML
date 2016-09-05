@@ -23,7 +23,7 @@ class FormShow extends React.Component {
           this.setState({
             datas: response.data.data
           });
-        });  
+        });
     }
       , 1000);
 
@@ -40,15 +40,11 @@ class FormShow extends React.Component {
           this.state.datas.map(data => (
             <Card style={center} key={data._id}>
               <CardHeader title={data.name} avatar={user} subtitle='Hello!'></CardHeader>
-              <CardTitle title='Why do you love dog?'></CardTitle>
+              <CardTitle title='Why do you love dog?' subtitle='Pleas tell us!'></CardTitle>
               <CardText>
-                {data.txt}
-              </CardText>
-              <CardText>
-                How much do you love dog? => {data.dog}
-              </CardText>
-              <CardText>
-                How much do you love cat? => {data.cat}
+                - {data.txt} <br/>
+                <br/>How much do you love dog? -> {data.dog}
+                <br/>How much do you love cat? -> {data.cat}
               </CardText>
             </Card>
           ))
