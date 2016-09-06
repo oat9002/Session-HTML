@@ -28,7 +28,7 @@ app.get('/', (req, res) => {
 
 app.post('/', (req, res) => {
 	db.form.insert(req.body)
-  res.send('Send complete!')
+  res.send('Sending is complete!')
 })
 
 app.get('/all', (req, res) => {
